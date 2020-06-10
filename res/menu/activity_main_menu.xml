@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/NewNote"
+        android:title="Створити новий запис"
+        android:onClick="onMenuNewNoteClicked"></item>
+
+    <item
+        android:id="@+id/Changes"
+        android:title="Правки">
+        <menu>
+            <item
+                android:id="@+id/cancel"
+                android:title="Відмінити"
+                android:onClick="onMenuBackClicked"/>
+            <item
+                android:id="@+id/back"
+                android:title="Повернути"
+                android:onClick="onMenuCancelClicked"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/Wiki"
+        android:title="Довідка"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/About"
+                android:title="Про автора"
+                android:onClick="onMenuAboutClicked"/>
+            <item
+                android:id="@+id/Instruction"
+                android:title="Інструкція користувача"
+                android:onClick="onMenuInstructionClicked"/>
+        </menu>
+    </item>
+
+</menu>
